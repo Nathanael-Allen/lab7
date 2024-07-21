@@ -1,10 +1,11 @@
 from Name import Name
 from Database import Database
+from valid import validYear, validGender
 
 def main():
-    data = Database.readNames(1960, 'M')
-    print(data)
-    # names = Name.showNames()
+    year = validYear('Input a year between 1914 and 2014: ')
+    gender = validGender('Input gender (M/F): ')
+    data = Name.showNames(year, gender)
     print('YEAR | NAME | GENDER | COUNT')
     print('-' * 30)
 

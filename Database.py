@@ -29,7 +29,7 @@ class Database:
         Database.connect()
         cursor = cls.__connection.cursor()
         sql = """
-        SELECT TOP 3 Name, Gender, Year, NameCount
+        SELECT TOP 20 Name, Gender, Year, NameCount
         FROM all_data
         WHERE Year = %s AND Gender = %s;
         """

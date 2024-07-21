@@ -39,11 +39,11 @@ class Name:
     def getCount(self):
         return self.__count
     
-    def showNames():
-        names = Database().showNames()
+    def showNames(year, gender):
+        names = Database().readNames(year, gender)
         data = []
         for i in range(0, len(names)):
             name = names[i]
-            data.append(Name(name["name"], name["year"], name["gender"], name["count"]))
+            data.append(Name(name=name[0], gender=name[1], year=name[2], count=name[3]))
         return data
 

@@ -8,8 +8,6 @@ ________________________________________________________________________________
 Welcome, this program accesses a database of the most popular names by year and gender.
 To show the top 20 most common names per year, input a year and a gender...
 ______________________________________________________________________________________
-         
-        
 """)
     year = validYear('Input a year between 1914 and 2014: ')
     gender = validGender('Input gender (M/F): ')

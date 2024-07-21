@@ -1,5 +1,4 @@
 from Name import Name
-from Database import Database
 from valid import validYear, validGender
 
 def main():

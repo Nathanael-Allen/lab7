@@ -1,12 +1,24 @@
+#******************************************************************************
+# Author:           Nathanael Allen
+# Lab:              Lab 7
+# Date:             7/21/24
+# Description:      This program access a database of names and their 
+#                   popularity by year. The program asks for a user input
+#                   year/gender and then gives the top 20 names that year
+# Input:            year(int), gender(string)
+# Output:           A table with the most common names by year
+#******************************************************************************
+
 from Name import Name
 from valid import validYear, validGender
 
 def main():
     print("""
-______________________________________________________________________________________
-Welcome, this program accesses a database of the most popular names by year and gender.
-To show the top 20 most common names per year, input a year and a gender...
-______________________________________________________________________________________
+______________________________________________________________________________
+Welcome, this program accesses a database of the most popular names 
+by year and gender. To show the top 20 most common names per year,
+input a year and a gender...
+______________________________________________________________________________
 """)
     year = validYear('Input a year between 1914 and 2014: ')
     gender = validGender('Input gender (M/F): ')

@@ -35,5 +35,7 @@ class Database:
         """
         cursor.execute(sql, (year, gender))
         rows = cursor.fetchall()
+        cls.__connection.close()
         return rows
+        
         
